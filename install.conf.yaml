@@ -1,0 +1,44 @@
+- clean:
+  - "~"
+
+- link:
+    ~/.zshrc:
+      path: zsh/.zshrc
+      force: true
+    ~/.zprofile:
+      path: zsh/.zprofile
+      force: true
+    ~/.zshenv:
+      path: zsh/.zshenv
+      force: true
+    ~/.p10k.zsh:
+      path: zsh/.p10k.zsh
+      force: true
+    ~/.bash_profile:
+      path: bash/.bash_profile
+      force: true
+    ~/.bashrc:
+      path: bash/.bashrc
+      force: true
+    ~/.profile:
+      path: bash/.profile
+      force: true
+    ~/.gitconfig:
+      path: git/.gitconfig
+      force: true
+    ~/.gitignore_global:
+      path: git/.gitignore_global
+      force: true
+    ~/.gitflow_export:
+      path: git/.gitflow_export
+      force: true
+    ~/.stCommitMsg:
+      path: git/.stCommitMsg
+      force: true
+    ~/.vimrc:
+      path: vim/.vimrc
+      force: true
+    ~/.local/bin/env:
+      path: local/bin/env
+      create: true
+      force: true
