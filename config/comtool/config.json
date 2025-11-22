@@ -1,0 +1,273 @@
+{
+    "version": 3,
+    "skin": "light",
+    "locale": "en",
+    "encoding": "UTF-8",
+    "skipVersion": null,
+    "connId": "serial",
+    "pluginsInfo": {
+        "external": {}
+    },
+    "activeItem": "dbg-1",
+    "currItem": null,
+    "items": [
+        {
+            "name": "Send Receive",
+            "pluginId": "dbg",
+            "config": {
+                "conns": {
+                    "serial": {
+                        "port": "/dev/cu.usbserial-140",
+                        "baudrate": 115200,
+                        "bytesize": 8,
+                        "parity": "None",
+                        "stopbits": "1",
+                        "flowcontrol": "None",
+                        "rts": false,
+                        "dtr": false
+                    },
+                    "tcp_udp": {
+                        "protocol": "tcp",
+                        "mode": "client",
+                        "target": [
+                            "127.0.0.1:2345",
+                            [
+                                "127.0.0.1:2345"
+                            ]
+                        ],
+                        "port": 2345,
+                        "auto_reconnect": false,
+                        "auto_reconnect_interval": 1.0
+                    },
+                    "ssh": {
+                        "host": "127.0.0.1",
+                        "port": 22,
+                        "user": "root",
+                        "passwd": "",
+                        "ssh_key": "",
+                        "auto_reconnect": false,
+                        "saved": []
+                    },
+                    "currConn": "serial"
+                },
+                "plugin": {
+                    "version": 1,
+                    "receiveAscii": true,
+                    "receiveAutoLinefeed": true,
+                    "receiveAutoLindefeedTime": 200,
+                    "sendAscii": true,
+                    "sendScheduled": false,
+                    "sendScheduledTime": 300,
+                    "sendAutoNewline": false,
+                    "useCRLF": true,
+                    "showTimestamp": true,
+                    "recordSend": false,
+                    "saveLogPath": "",
+                    "saveLogPath2": "",
+                    "saveLog": false,
+                    "wrap": false,
+                    "saveLogAutoNew": false,
+                    "color": false,
+                    "sendEscape": false,
+                    "customSendItems": [],
+                    "sendHistoryList": [
+                        "#s0s0",
+                        "#sbsb"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "protocol",
+            "pluginId": "protocol",
+            "config": {
+                "conns": {
+                    "serial": {
+                        "port": "/dev/cu.usbserial-130",
+                        "baudrate": 115200,
+                        "bytesize": 8,
+                        "parity": "None",
+                        "stopbits": "1",
+                        "flowcontrol": "None",
+                        "rts": false,
+                        "dtr": false
+                    },
+                    "tcp_udp": {
+                        "protocol": "tcp",
+                        "mode": "client",
+                        "target": [
+                            "127.0.0.1:2345",
+                            [
+                                "127.0.0.1:2345"
+                            ]
+                        ],
+                        "port": 2345,
+                        "auto_reconnect": false,
+                        "auto_reconnect_interval": 1.0
+                    },
+                    "ssh": {
+                        "host": "127.0.0.1",
+                        "port": 22,
+                        "user": "root",
+                        "passwd": "",
+                        "ssh_key": "",
+                        "auto_reconnect": false,
+                        "saved": []
+                    },
+                    "currConn": "serial"
+                },
+                "plugin": {
+                    "version": 1,
+                    "sendAscii": true,
+                    "useCRLF": false,
+                    "sendEscape": true,
+                    "code": {
+                        "default": "\ndef decode(data):\n    return data\n\ndef encode(data):\n    return data\n"
+                    },
+                    "currCode": "default",
+                    "customSendItems": [
+                        {
+                            "text": "hello",
+                            "remark": "hello",
+                            "icon": "fa5.hand-paper",
+                            "shortcut": []
+                        },
+                        {
+                            "text": "\\x01\\x03\\x03\\x03\\x03\\x01",
+                            "remark": "pre",
+                            "icon": "ei.arrow-left",
+                            "shortcut": [
+                                [
+                                    16777234,
+                                    "Left"
+                                ]
+                            ]
+                        },
+                        {
+                            "text": "\\x01\\x04\\x04\\x04\\x04\\x01",
+                            "remark": "next",
+                            "icon": "ei.arrow-right",
+                            "shortcut": [
+                                [
+                                    16777236,
+                                    "Right"
+                                ]
+                            ]
+                        },
+                        {
+                            "text": "\\x01\\x01\\x01\\x01\\x01\\x01",
+                            "remark": "ok",
+                            "icon": "fa.circle-o",
+                            "shortcut": [
+                                [
+                                    16777220,
+                                    "Return"
+                                ]
+                            ]
+                        },
+                        {
+                            "text": "\\x01\\x02\\x02\\x02\\x02\\x01",
+                            "remark": "ret",
+                            "icon": "ei.return-key",
+                            "shortcut": [
+                                [
+                                    16777216,
+                                    "Esc"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "terminal",
+            "pluginId": "terminal",
+            "config": {
+                "conns": {
+                    "serial": {
+                        "port": "/dev/cu.usbserial-130",
+                        "baudrate": 115200,
+                        "bytesize": 8,
+                        "parity": "None",
+                        "stopbits": "1",
+                        "flowcontrol": "None",
+                        "rts": false,
+                        "dtr": false
+                    },
+                    "tcp_udp": {
+                        "protocol": "tcp",
+                        "mode": "client",
+                        "target": [
+                            "127.0.0.1:2345",
+                            [
+                                "127.0.0.1:2345"
+                            ]
+                        ],
+                        "port": 2345,
+                        "auto_reconnect": false,
+                        "auto_reconnect_interval": 1.0
+                    },
+                    "ssh": {
+                        "host": "127.0.0.1",
+                        "port": 22,
+                        "user": "root",
+                        "passwd": "",
+                        "ssh_key": "",
+                        "auto_reconnect": false,
+                        "saved": []
+                    },
+                    "currConn": "serial"
+                },
+                "plugin": {
+                    "version": 1
+                }
+            }
+        },
+        {
+            "name": "Graph",
+            "pluginId": "graph",
+            "config": {
+                "conns": {
+                    "serial": {
+                        "port": "/dev/cu.usbserial-130",
+                        "baudrate": 115200,
+                        "bytesize": 8,
+                        "parity": "None",
+                        "stopbits": "1",
+                        "flowcontrol": "None",
+                        "rts": false,
+                        "dtr": false
+                    },
+                    "tcp_udp": {
+                        "protocol": "tcp",
+                        "mode": "client",
+                        "target": [
+                            "127.0.0.1:2345",
+                            [
+                                "127.0.0.1:2345"
+                            ]
+                        ],
+                        "port": 2345,
+                        "auto_reconnect": false,
+                        "auto_reconnect_interval": 1.0
+                    },
+                    "ssh": {
+                        "host": "127.0.0.1",
+                        "port": 22,
+                        "user": "root",
+                        "passwd": "",
+                        "ssh_key": "",
+                        "auto_reconnect": false,
+                        "saved": []
+                    },
+                    "currConn": "serial"
+                },
+                "plugin": {
+                    "version": 1,
+                    "graphWidgets": []
+                }
+            }
+        }
+    ]
+}

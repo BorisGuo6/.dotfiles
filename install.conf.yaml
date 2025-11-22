@@ -42,3 +42,50 @@
       path: local/bin/env
       create: true
       force: true
+    ~/.cargo/env:
+      path: cargo/env
+      create: true
+      force: true
+    ~/.cargo/config.toml:
+      path: cargo/config.toml
+      create: true
+      force: true
+    ~/.condarc:
+      path: misc/.condarc
+      force: true
+    ~/.hgignore_global:
+      path: misc/.hgignore_global
+      force: true
+    ~/.inputrc:
+      path: misc/.inputrc
+      force: true
+    ~/.iterm2_shell_integration.zsh:
+      path: misc/.iterm2_shell_integration.zsh
+      force: true
+    ~/.jetbrains.vmoptions.sh:
+      path: misc/.jetbrains.vmoptions.sh
+      force: true
+    ~/.config/neofetch/config.conf:
+      path: config/neofetch/config.conf
+      create: true
+      force: true
+    ~/.config/craft/config.toml:
+      path: config/craft/config.toml
+      create: true
+      force: true
+    ~/.config/gh/config.yml:
+      path: config/gh/config.yml
+      create: true
+      force: true
+    ~/.config/gh/hosts.yml:
+      path: config/gh/hosts.yml
+      create: true
+      force: true
+    ~/.config/comtool/config.json:
+      path: config/comtool/config.json
+      create: true
+      force: true
+    ~/.warp/keybindings.yaml:
+      path: warp/keybindings.yaml
+      create: true
+      force: true
