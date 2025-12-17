@@ -45,6 +45,7 @@ alias sl=ls
 alias mv="mv -i"
 alias mkdir="mkdir -p"
 alias df="df -h"
+alias pip="uv pip"
 
 [[ -f "$HOME/.jetbrains.vmoptions.sh" ]] && source "$HOME/.jetbrains.vmoptions.sh"
 if command -v brew >/dev/null 2>&1; then
