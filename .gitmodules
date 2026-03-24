@@ -1,4 +1,4 @@
 [submodule "dotbot"]
 	ignore = dirty
 	path = dotbot
-	url = https://ghproxy.com/https://github.com/anishathalye/dotbot
+	url = https://github.com/anishathalye/dotbot
