@@ -12,6 +12,7 @@ path_append() { case ":${PATH}:" in *":$1:"*) ;; *) PATH="${PATH}:$1";; esac }
 path_prepend "/usr/local/bin"
 path_prepend "$HOME/bin"
 path_prepend "$HOME/.local/bin"
+path_prepend "$HOME/Library/TinyTeX/bin/universal-darwin"
 
 # Homebrew environment
 if command -v brew >/dev/null 2>&1; then
@@ -84,3 +85,9 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig:/opt/homebrew/opt/d
 [[ -f "$HOME/.secrets.env" ]] && source "$HOME/.secrets.env"
 
 export PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/boris/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/boris/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/boris/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/boris/google-cloud-sdk/completion.zsh.inc'; fi
