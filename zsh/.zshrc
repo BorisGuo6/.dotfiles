@@ -95,3 +95,10 @@ if [ -f '/Users/boris/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bor
 
 # Added by CodeBuddy CN
 export PATH="/Users/boris/.codebuddy/bin:$PATH"
+
+# bun completions
+[ -s "/Users/boris/.bun/_bun" ] && source "/Users/boris/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
