@@ -87,12 +87,6 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig:/opt/homebrew/opt/d
 
 export PATH
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/boris/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/boris/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/boris/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/boris/google-cloud-sdk/completion.zsh.inc'; fi
-
 
 # Added by CodeBuddy CN
 export PATH="/Users/boris/.codebuddy/bin:$PATH"
@@ -107,3 +101,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/boris/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/boris/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/boris/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/boris/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
