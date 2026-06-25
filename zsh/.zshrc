@@ -11,8 +11,10 @@ path_prepend() { case ":${PATH}:" in *":$1:"*) ;; *) PATH="$1:${PATH}";; esac }
 path_append() { case ":${PATH}:" in *":$1:"*) ;; *) PATH="${PATH}:$1";; esac }
 
 path_prepend "/usr/local/bin"
+path_prepend "/opt/homebrew/bin"
 path_prepend "$HOME/bin"
 path_prepend "$HOME/.local/bin"
+path_prepend "$HOME/go/bin"
 path_prepend "$HOME/Library/TinyTeX/bin/universal-darwin"
 
 # Homebrew environment
@@ -107,3 +109,6 @@ if [ -f '/Users/boris/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/boris/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/boris/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# bdpan
+export PATH="$PATH:/Users/boris/.local/bin"
