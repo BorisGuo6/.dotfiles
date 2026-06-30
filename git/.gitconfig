@@ -29,14 +29,14 @@
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [http "https://github.com"]
-	proxy = http://proxy.corp.dmrobot.com:1081
+	proxy = http://127.0.0.1:7993
 [http "https://github.com/"]
-	proxy = http://proxy.corp.dmrobot.com:1081
+	proxy = http://127.0.0.1:7993
 [http "https://huggingface.co"]
-	proxy = http://proxy.corp.dmrobot.com:1081
+	proxy = http://127.0.0.1:7993
 [http "https://huggingface.co/"]
-	proxy = http://proxy.corp.dmrobot.com:1081
+	proxy = http://127.0.0.1:7993
 [http "https://gitlab.com"]
-	proxy = http://proxy.corp.dmrobot.com:1081
+	proxy = http://127.0.0.1:7993
 [http "https://gitlab.com/"]
-	proxy = http://proxy.corp.dmrobot.com:1081
+	proxy = http://127.0.0.1:7993
